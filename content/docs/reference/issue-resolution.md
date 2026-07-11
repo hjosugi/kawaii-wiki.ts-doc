@@ -1,11 +1,11 @@
 ---
-title: Issue判断記録
+title: Issue判断記録（英語原文）
 description: 完了範囲、非目標、スコープ判断。
 coverPosition: center
 toc: true
 ---
 
-> Source: `docs/ISSUE_RESOLUTION.md`
+> ソース: `docs/ISSUE_RESOLUTION.md` — このページはリポジトリの英語原文です。
 
 # Issue Resolution Notes
 
