@@ -1,11 +1,11 @@
 ---
-title: Webパッケージ
+title: Webパッケージ（英語原文）
 description: Web UIの構成、開発、ビルド方法。
 coverPosition: center
 toc: true
 ---
 
-> Source: `../../web/README.md`
+> ソース: `../../web/README.md` — このページはリポジトリの英語原文です。
 
 # kawaii-wiki.ts Web
 
