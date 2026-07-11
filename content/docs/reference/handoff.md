@@ -1,11 +1,11 @@
 ---
-title: 実装ハンドオフ
+title: 実装ハンドオフ（英語原文）
 description: 実装状況、判断、拡張方法、注意点。
 coverPosition: center
 toc: true
 ---
 
-> Source: `docs/HANDOFF.md`
+> ソース: `docs/HANDOFF.md` — このページはリポジトリの英語原文です。
 
 # kawaii-wiki.ts — Handoff / 引き継ぎ資料
 
