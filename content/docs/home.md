@@ -25,6 +25,6 @@ kawaii-wiki.ts は、知識を自分で所有し、Markdownで育て、ページ
 - [[docs/api-and-automation|REST API、Webhook、自動化]]
 - [[docs/troubleshooting|トラブルシューティング]]
 - [[docs/contributing|開発・コントリビューション]]
-- [[docs/reference|完全なリポジトリ資料]]
+- [[docs/reference|リポジトリ原文（英語を含む）]]
 
 画面右上の検索、または「検索」ボタンから、ページ名・本文・ラベルを横断検索できます。
