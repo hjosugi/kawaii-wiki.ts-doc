@@ -1,11 +1,11 @@
 ---
-title: 環境変数リファレンス
+title: 環境変数リファレンス（英語原文）
 description: サーバー設定とSecretの完全な一覧。
 coverPosition: center
 toc: true
 ---
 
-> Source: `docs/CONFIGURATION.md`
+> ソース: `docs/CONFIGURATION.md` — このページはリポジトリの英語原文です。
 
 # Configuration reference
 
