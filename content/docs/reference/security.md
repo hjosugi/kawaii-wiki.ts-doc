@@ -1,11 +1,11 @@
 ---
-title: セキュリティポリシー
+title: セキュリティポリシー（英語原文）
 description: 脆弱性の報告方法とサポート範囲。
 coverPosition: center
 toc: true
 ---
 
-> Source: `SECURITY.md`
+> ソース: `SECURITY.md` — このページはリポジトリの英語原文です。
 
 # Security policy
 
