@@ -7,7 +7,7 @@ toc: true
 
 # kawaii-wiki.ts ドキュメント
 
-kawaii-wiki.ts は、知識を自分で所有し、Markdownで育て、ページ同士をつなぐための無料・オープンソースWikiです。主役はソフトウェア名ではなく、あなたのWikiと知識です。
+無料・オープンソースのWikiパッケージです。
 
 ## 読む順番
 
