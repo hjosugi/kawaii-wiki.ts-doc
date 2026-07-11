@@ -1,0 +1,30 @@
+---
+title: kawaii-wiki.ts ドキュメント
+description: 利用者・管理者・開発者向けの公式ガイド。
+coverPosition: center
+toc: true
+---
+
+# kawaii-wiki.ts ドキュメント
+
+kawaii-wiki.ts は、知識を自分で所有し、Markdownで育て、ページ同士をつなぐための無料・オープンソースWikiです。主役はソフトウェア名ではなく、あなたのWikiと知識です。
+
+## 読む順番
+
+1. [[docs/installation|インストール]]
+2. [[docs/getting-started|はじめる]]
+3. [[docs/pages-and-editing|ページの作成と編集]]
+4. [[docs/organize-and-search|整理と検索]]
+5. [[docs/collaboration|共同作業と権限]]
+6. [[docs/administration|管理と安全な運用]]
+
+## 運用・開発
+
+- [[docs/deployment-and-updates|デプロイ、更新、ロールバック]]
+- [[docs/git-and-backups|Gitミラーとバックアップ]]
+- [[docs/api-and-automation|REST API、Webhook、自動化]]
+- [[docs/troubleshooting|トラブルシューティング]]
+- [[docs/contributing|開発・コントリビューション]]
+- [[docs/reference|完全なリポジトリ資料]]
+
+画面右上の検索、または「検索」ボタンから、ページ名・本文・ラベルを横断検索できます。
