@@ -1,11 +1,11 @@
 ---
-title: 行動規範
+title: 行動規範（英語原文）
 description: コミュニティの行動規範。
 coverPosition: center
 toc: true
 ---
 
-> Source: `CODE_OF_CONDUCT.md`
+> ソース: `CODE_OF_CONDUCT.md` — このページはリポジトリの英語原文です。
 
 # Code of conduct
 
