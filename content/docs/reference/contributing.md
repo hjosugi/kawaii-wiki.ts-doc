@@ -1,11 +1,11 @@
 ---
-title: コントリビューション規約
+title: コントリビューション規約（英語原文）
 description: Issue、PR、開発品質の規約。
 coverPosition: center
 toc: true
 ---
 
-> Source: `CONTRIBUTING.md`
+> ソース: `CONTRIBUTING.md` — このページはリポジトリの英語原文です。
 
 # Contributing
 
