@@ -1,11 +1,11 @@
 ---
-title: 更新とロールバック
+title: 更新とロールバック（英語原文）
 description: バックアップを前提とした安全な更新手順。
 coverPosition: center
 toc: true
 ---
 
-> Source: `docs/UPGRADING.md`
+> ソース: `docs/UPGRADING.md` — このページはリポジトリの英語原文です。
 
 # Upgrading and rollback
 
