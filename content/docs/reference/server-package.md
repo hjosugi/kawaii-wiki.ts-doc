@@ -1,11 +1,11 @@
 ---
-title: Serverパッケージ
+title: Serverパッケージ（英語原文）
 description: サーバーの構成、実行、拡張方法。
 coverPosition: center
 toc: true
 ---
 
-> Source: `../README.md`
+> ソース: `../README.md` — このページはリポジトリの英語原文です。
 
 # kawaii-wiki.ts Server
 
