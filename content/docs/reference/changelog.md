@@ -14,6 +14,11 @@ Versioning; API compatibility details are in `docs/API.md`.
 
 ## [1.0.5] - 2026-07-11
 
+### Added
+
+- Git source-of-truth mode, page-level comment policies, direct attachments,
+  localized file selection, and visual regression tests.
+
 ### Changed
 
 - Replaced the legacy purple triangle with a compact rose sparkle mark and a
@@ -28,11 +33,16 @@ Versioning; API compatibility details are in `docs/API.md`.
 - Added Japanese built-in template content, localized page status badges, a
   Japanese Core package guide, and explicit language labels for English
   repository-source documentation.
+- Centered and simplified the header, compacted page graphs, clarified display
+  and two-factor login settings, and made this repository authoritative for the
+  deployed documentation.
 
 ### Fixed
 
 - Restored readable foreground colors for plain text inside highlighted code
   blocks on light themes.
+- Restored missing confirmation buttons, outside-click menu closing, page-tree
+  icons, duplicate New page symbols, and Japanese file-input presentation.
 
 ## [1.0.4] - 2026-07-11
 
