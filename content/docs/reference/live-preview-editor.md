@@ -1,11 +1,11 @@
 ---
-title: ライブプレビューエディター検証
+title: ライブプレビューエディター検証（英語原文）
 description: 編集体験の技術検証と判断。
 coverPosition: center
 toc: true
 ---
 
-> Source: `docs/LIVE_PREVIEW_EDITOR_SPIKE.md`
+> ソース: `docs/LIVE_PREVIEW_EDITOR_SPIKE.md` — このページはリポジトリの英語原文です。
 
 # Live Preview Editor Spike
 
