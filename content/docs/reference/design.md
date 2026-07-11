@@ -1,11 +1,11 @@
 ---
-title: アーキテクチャ
+title: アーキテクチャ（英語原文）
 description: 設計、データフロー、検索、型安全性。
 coverPosition: center
 toc: true
 ---
 
-> Source: `docs/DESIGN.md`
+> ソース: `docs/DESIGN.md` — このページはリポジトリの英語原文です。
 
 # kawaii-wiki.ts — Design & Architecture
 
