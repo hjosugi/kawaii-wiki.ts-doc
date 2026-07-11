@@ -1,11 +1,11 @@
 ---
-title: プロダクト設計RFC
+title: プロダクト設計RFC（英語原文）
 description: kawaii-wiki.tsの方向性と設計原則。
 coverPosition: center
 toc: true
 ---
 
-> Source: `docs/KAWAII_WIKI_DESIGN_RFC.md`
+> ソース: `docs/KAWAII_WIKI_DESIGN_RFC.md` — このページはリポジトリの英語原文です。
 
 # Kawaii Wiki Design RFC
 
