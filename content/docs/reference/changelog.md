@@ -12,12 +12,32 @@ toc: true
 All notable changes are documented here. This project follows Semantic
 Versioning; API compatibility details are in `docs/API.md`.
 
-## [1.0.5] - 2026-07-11
+## [1.0.7] - 2026-07-11
 
 ### Added
 
 - Git source-of-truth mode, page-level comment policies, direct attachments,
   localized file selection, and visual regression tests.
+
+### Changed
+
+- Centered and simplified the header, compacted page graphs, clarified display
+  and two-factor login settings, and made this repository authoritative for the
+  deployed documentation.
+
+### Fixed
+
+- Restored missing confirmation buttons, outside-click menu closing, page-tree
+  icons, duplicate New page symbols, and Japanese file-input presentation.
+
+## [1.0.6] - 2026-07-11
+
+### Fixed
+
+- Prevented late editor initialization from clearing a title entered immediately
+  after opening the new-page settings screen.
+
+## [1.0.5] - 2026-07-11
 
 ### Changed
 
@@ -33,16 +53,11 @@ Versioning; API compatibility details are in `docs/API.md`.
 - Added Japanese built-in template content, localized page status badges, a
   Japanese Core package guide, and explicit language labels for English
   repository-source documentation.
-- Centered and simplified the header, compacted page graphs, clarified display
-  and two-factor login settings, and made this repository authoritative for the
-  deployed documentation.
 
 ### Fixed
 
 - Restored readable foreground colors for plain text inside highlighted code
   blocks on light themes.
-- Restored missing confirmation buttons, outside-click menu closing, page-tree
-  icons, duplicate New page symbols, and Japanese file-input presentation.
 
 ## [1.0.4] - 2026-07-11
 
