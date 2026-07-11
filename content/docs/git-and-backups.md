@@ -4,6 +4,9 @@ description: Git同期の設定とデータ保護。
 coverPosition: center
 toc: true
 ---
+<!-- i18n: language-switcher -->
+[English](git-and-backups.en.md) | [日本語](git-and-backups.md)
+
 
 # Gitミラーとバックアップ
 

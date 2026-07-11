@@ -4,6 +4,9 @@ description: REST/OpenAPIの1.x安定性方針。
 coverPosition: center
 toc: true
 ---
+<!-- i18n: language-switcher -->
+[English](api.md) | [日本語](api.ja.md)
+
 
 > ソース: `docs/API.md` — このページはリポジトリの英語原文です。
 

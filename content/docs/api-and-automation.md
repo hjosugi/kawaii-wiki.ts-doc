@@ -4,6 +4,9 @@ description: 外部連携の入口と認証。
 coverPosition: center
 toc: true
 ---
+<!-- i18n: language-switcher -->
+[English](api-and-automation.en.md) | [日本語](api-and-automation.md)
+
 
 # REST API、Webhook、自動化
 

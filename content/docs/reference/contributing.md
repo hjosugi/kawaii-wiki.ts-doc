@@ -4,6 +4,9 @@ description: Issue、PR、開発品質の規約。
 coverPosition: center
 toc: true
 ---
+<!-- i18n: language-switcher -->
+[English](contributing.md) | [日本語](contributing.ja.md)
+
 
 > ソース: `CONTRIBUTING.md` — このページはリポジトリの英語原文です。
 

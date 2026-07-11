@@ -4,6 +4,9 @@ description: リリースごとの追加・変更・セキュリティ修正。
 coverPosition: center
 toc: true
 ---
+<!-- i18n: language-switcher -->
+[English](changelog.md) | [日本語](changelog.ja.md)
+
 
 > ソース: `CHANGELOG.md` — このページはリポジトリの英語原文です。
 

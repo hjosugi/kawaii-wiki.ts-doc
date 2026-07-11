@@ -4,6 +4,9 @@ description: プロジェクト概要と最短のDocker起動手順。
 coverPosition: center
 toc: true
 ---
+<!-- i18n: language-switcher -->
+[English](readme.md) | [日本語](readme.ja.md)
+
 
 > ソース: `README.md` — このページはリポジトリの英語原文です。
 

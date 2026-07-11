@@ -4,6 +4,9 @@ description: コミュニティの行動規範。
 coverPosition: center
 toc: true
 ---
+<!-- i18n: language-switcher -->
+[English](code-of-conduct.md) | [日本語](code-of-conduct.ja.md)
+
 
 > ソース: `CODE_OF_CONDUCT.md` — このページはリポジトリの英語原文です。
 

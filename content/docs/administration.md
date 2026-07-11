@@ -4,6 +4,9 @@ description: 管理設定の探し方、外観、ポリシー、監査。
 coverPosition: center
 toc: true
 ---
+<!-- i18n: language-switcher -->
+[English](administration.en.md) | [日本語](administration.md)
+
 
 # 管理と安全な運用
 

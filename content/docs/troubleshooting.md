@@ -4,6 +4,9 @@ description: 起動、保存、検索、権限、表示崩れの確認項目。
 coverPosition: center
 toc: true
 ---
+<!-- i18n: language-switcher -->
+[English](troubleshooting.en.md) | [日本語](troubleshooting.md)
+
 
 # トラブルシューティング
 

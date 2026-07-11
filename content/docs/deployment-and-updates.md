@@ -4,6 +4,9 @@ description: DockerとRailwayで安全に更新する手順。
 coverPosition: center
 toc: true
 ---
+<!-- i18n: language-switcher -->
+[English](deployment-and-updates.en.md) | [日本語](deployment-and-updates.md)
+
 
 # デプロイ、更新、ロールバック
 

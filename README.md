@@ -1,3 +1,6 @@
+<!-- i18n: language-switcher -->
+[English](README.md) | [日本語](README.ja.md)
+
 # kawaii-wiki.ts documentation
 
 [公開ドキュメント](https://kawaii-wiki-ts-docs.up.railway.app/docs/home)で表示する公式記事の正本です。

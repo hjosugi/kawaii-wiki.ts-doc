@@ -4,6 +4,9 @@ description: ローカル開発、品質確認、IssueとPR。
 coverPosition: center
 toc: true
 ---
+<!-- i18n: language-switcher -->
+[English](contributing.en.md) | [日本語](contributing.md)
+
 
 # 開発・コントリビューション
 

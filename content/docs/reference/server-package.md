@@ -4,6 +4,9 @@ description: サーバーの構成、実行、拡張方法。
 coverPosition: center
 toc: true
 ---
+<!-- i18n: language-switcher -->
+[English](server-package.md) | [日本語](server-package.ja.md)
+
 
 > ソース: `../README.md` — このページはリポジトリの英語原文です。
 

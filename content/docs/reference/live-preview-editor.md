@@ -4,6 +4,9 @@ description: 編集体験の技術検証と判断。
 coverPosition: center
 toc: true
 ---
+<!-- i18n: language-switcher -->
+[English](live-preview-editor.md) | [日本語](live-preview-editor.ja.md)
+
 
 > ソース: `docs/LIVE_PREVIEW_EDITOR_SPIKE.md` — このページはリポジトリの英語原文です。
 

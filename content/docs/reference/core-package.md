@@ -4,6 +4,9 @@ description: 純粋なドメインロジックと型。
 coverPosition: center
 toc: true
 ---
+<!-- i18n: language-switcher -->
+[English](core-package.en.md) | [日本語](core-package.md)
+
 
 > ソース: `packages/core/README.md`
 

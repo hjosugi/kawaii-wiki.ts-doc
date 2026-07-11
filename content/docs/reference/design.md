@@ -4,6 +4,9 @@ description: 設計、データフロー、検索、型安全性。
 coverPosition: center
 toc: true
 ---
+<!-- i18n: language-switcher -->
+[English](design.md) | [日本語](design.ja.md)
+
 
 > ソース: `docs/DESIGN.md` — このページはリポジトリの英語原文です。
 

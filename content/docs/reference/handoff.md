@@ -4,6 +4,9 @@ description: 実装状況、判断、拡張方法、注意点。
 coverPosition: center
 toc: true
 ---
+<!-- i18n: language-switcher -->
+[English](handoff.md) | [日本語](handoff.ja.md)
+
 
 > ソース: `docs/HANDOFF.md` — このページはリポジトリの英語原文です。
 

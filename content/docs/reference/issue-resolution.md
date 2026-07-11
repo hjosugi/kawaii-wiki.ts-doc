@@ -4,6 +4,9 @@ description: 完了範囲、非目標、スコープ判断。
 coverPosition: center
 toc: true
 ---
+<!-- i18n: language-switcher -->
+[English](issue-resolution.md) | [日本語](issue-resolution.ja.md)
+
 
 > ソース: `docs/ISSUE_RESOLUTION.md` — このページはリポジトリの英語原文です。
 

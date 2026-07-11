@@ -4,6 +4,9 @@ description: kawaii-wiki.tsの方向性と設計原則。
 coverPosition: center
 toc: true
 ---
+<!-- i18n: language-switcher -->
+[English](product-design-rfc.md) | [日本語](product-design-rfc.ja.md)
+
 
 > ソース: `docs/KAWAII_WIKI_DESIGN_RFC.md` — このページはリポジトリの英語原文です。
 

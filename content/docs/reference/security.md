@@ -4,6 +4,9 @@ description: 脆弱性の報告方法とサポート範囲。
 coverPosition: center
 toc: true
 ---
+<!-- i18n: language-switcher -->
+[English](security.md) | [日本語](security.ja.md)
+
 
 > ソース: `SECURITY.md` — このページはリポジトリの英語原文です。
 

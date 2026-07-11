@@ -4,6 +4,9 @@ description: サーバー設定とSecretの完全な一覧。
 coverPosition: center
 toc: true
 ---
+<!-- i18n: language-switcher -->
+[English](configuration.md) | [日本語](configuration.ja.md)
+
 
 > ソース: `docs/CONFIGURATION.md` — このページはリポジトリの英語原文です。
 

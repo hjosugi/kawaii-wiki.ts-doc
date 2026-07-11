@@ -4,6 +4,9 @@ description: 初回セットアップから最初のページ作成まで。
 coverPosition: center
 toc: true
 ---
+<!-- i18n: language-switcher -->
+[English](getting-started.en.md) | [日本語](getting-started.md)
+
 
 # はじめる
 

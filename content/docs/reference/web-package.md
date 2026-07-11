@@ -4,6 +4,9 @@ description: Web UIの構成、開発、ビルド方法。
 coverPosition: center
 toc: true
 ---
+<!-- i18n: language-switcher -->
+[English](web-package.md) | [日本語](web-package.ja.md)
+
 
 > ソース: `../../web/README.md` — このページはリポジトリの英語原文です。
 

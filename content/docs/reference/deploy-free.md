@@ -4,6 +4,9 @@ description: 無料・低コスト環境へのデプロイガイド。
 coverPosition: center
 toc: true
 ---
+<!-- i18n: language-switcher -->
+[English](deploy-free.md) | [日本語](deploy-free.ja.md)
+
 
 > ソース: `docs/DEPLOY_FREE.md` — このページはリポジトリの英語原文です。
 

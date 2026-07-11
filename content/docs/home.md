@@ -4,6 +4,9 @@ description: 利用者・管理者・開発者向けの公式ガイド。
 coverPosition: center
 toc: true
 ---
+<!-- i18n: language-switcher -->
+[English](home.en.md) | [日本語](home.md)
+
 
 # kawaii-wiki.ts ドキュメント
 
