@@ -1,11 +1,11 @@
 ---
-title: インラインコメントRFC
+title: インラインコメントRFC（英語原文）
 description: インラインコメント機能の設計案。
 coverPosition: center
 toc: true
 ---
 
-> Source: `docs/INLINE_COMMENTS_RFC.md`
+> ソース: `docs/INLINE_COMMENTS_RFC.md` — このページはリポジトリの英語原文です。
 
 # Inline Anchored Comments RFC
 
