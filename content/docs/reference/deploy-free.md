@@ -1,11 +1,11 @@
 ---
-title: 低コストデプロイ
+title: 低コストデプロイ（英語原文）
 description: 無料・低コスト環境へのデプロイガイド。
 coverPosition: center
 toc: true
 ---
 
-> Source: `docs/DEPLOY_FREE.md`
+> ソース: `docs/DEPLOY_FREE.md` — このページはリポジトリの英語原文です。
 
 # Render Free + Turso + R2 Deployment
 
