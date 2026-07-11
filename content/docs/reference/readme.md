@@ -1,11 +1,11 @@
 ---
-title: README
+title: README（英語原文）
 description: プロジェクト概要と最短のDocker起動手順。
 coverPosition: center
 toc: true
 ---
 
-> Source: `README.md`
+> ソース: `README.md` — このページはリポジトリの英語原文です。
 
 # kawaii-wiki.ts
 
