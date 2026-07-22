@@ -1,14 +1,13 @@
 ---
-title: 低コストデプロイ（英語原文）
-description: 無料・低コスト環境へのデプロイガイド。
+title: Low-cost deployment (original English)
+description: Deployment guide for free and low-cost environments.
 coverPosition: center
 toc: true
 ---
 <!-- i18n: language-switcher -->
 [English](deploy-free.md) | [日本語](deploy-free.ja.md)
 
-
-> ソース: `docs/DEPLOY_FREE.md` — このページはリポジトリの英語原文です。
+> Source: `docs/DEPLOY_FREE.md`
 
 # Render Free + Turso + R2 Deployment
 
@@ -23,6 +22,8 @@ This is the zero-cost deployment path for issue #44.
 | R2 assets | Supported through the server asset storage adapter. |
 | Local libSQL | Supported via `DATABASE_DRIVER=libsql` and a local `file:` or `:memory:` URL. |
 | Turso/libSQL | Supported as a libSQL embedded replica: the server opens a local replica file and syncs it with the remote Turso URL. |
+| PostgreSQL | Supported via `DATABASE_DRIVER=postgres` and a `DATABASE_URL`; the schema migrates on boot. |
+| MySQL | Supported via `DATABASE_DRIVER=mysql` and a `DATABASE_URL`; the schema migrates on boot. |
 
 ## Render Free Shape
 

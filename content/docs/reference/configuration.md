@@ -1,14 +1,13 @@
 ---
-title: 環境変数リファレンス（英語原文）
-description: サーバー設定とSecretの完全な一覧。
+title: Configuration reference (original English)
+description: Complete server configuration and secret reference.
 coverPosition: center
 toc: true
 ---
 <!-- i18n: language-switcher -->
 [English](configuration.md) | [日本語](configuration.ja.md)
 
-
-> ソース: `docs/CONFIGURATION.md` — このページはリポジトリの英語原文です。
+> Source: `docs/CONFIGURATION.md`
 
 # Configuration reference
 
@@ -27,11 +26,14 @@ the preferred prefix; legacy `TS_WIKI_*` aliases remain accepted for 1.x.
 | `KAWAII_WIKI_JWT_SECRET_FILE` | `/data/.jwt-secret` in Docker | File used by the Docker entrypoint when `JWT_SECRET` is omitted |
 | `DATA_DIR` | `./data` | Runtime files and local assets |
 | `WEB_DIST_DIR` | `apps/web/dist` | Built SPA directory |
-| `DATABASE_DRIVER` | `sqlite` | `sqlite` or `libsql` |
+| `DATABASE_DRIVER` | `sqlite` | `sqlite`, `libsql`, `postgres`, or `mysql` |
 | `DATABASE_PATH` | `DATA_DIR/ts-wiki.sqlite` | SQLite file |
 | `LIBSQL_URL` | unset | Local or remote libSQL URL |
 | `LIBSQL_AUTH_TOKEN` | unset | Remote libSQL credential |
 | `LIBSQL_REPLICA_PATH` | under `DATA_DIR` | Embedded replica file |
+| `DATABASE_URL` | unset | Connection string for `postgres` or `mysql`, e.g. `postgres://user:pass@host:5432/db` or `mysql://user:pass@host:3306/db` |
+| `DATABASE_SSL` | `false` | Postgres/MySQL TLS: `false`, `true` (verify the certificate), or `require` (enforce TLS without verifying the chain — managed providers) |
+| `DATABASE_POOL_MAX` | driver default | Upper bound on pooled Postgres or MySQL connections |
 | `KAWAII_WIKI_FTS_TOKENIZER` | `unicode61` | `unicode61` or `trigram`; back up before changing an existing index |
 
 ## Authentication and policy
@@ -96,9 +98,11 @@ Git mirroring uses `KAWAII_WIKI_GIT_ENABLED`, `KAWAII_WIKI_GIT_DIR`,
 `KAWAII_WIKI_GIT_REMOTE_URL`,
 `KAWAII_WIKI_GIT_SOURCE_OF_TRUTH`,
 `KAWAII_WIKI_GIT_AUTHOR_NAME`, `KAWAII_WIKI_GIT_AUTHOR_EMAIL`, and
-`KAWAII_WIKI_GIT_SYNC_INTERVAL_MS`. Git is a content mirror by default. Set
-`KAWAII_WIKI_GIT_SOURCE_OF_TRUTH=true` to make the tracked Markdown page set
-authoritative. Git is still not a database backup.
+`KAWAII_WIKI_GIT_SYNC_INTERVAL_MS`. By default Git is a content mirror. Set
+`KAWAII_WIKI_GIT_SOURCE_OF_TRUTH=true` when the remote repository must be the
+authoritative page set: startup then waits for Git, imports tracked Markdown,
+and removes active database pages that are absent from the repository. Git is
+still not a database backup.
 
 Example for a public content repository:
 

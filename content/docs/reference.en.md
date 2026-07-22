@@ -30,4 +30,4 @@ The official guides for users are provided in Japanese. This section contains th
 - [[docs/reference/code-of-conduct|Code of Conduct (English Original)]] — Community code of conduct.
 - [[docs/reference/server-package|Server Package (English Original)]] — Server configuration, execution, and extension methods.
 - [[docs/reference/web-package|Web Package (English Original)]] — Web UI configuration, development, and build methods.
-- [[docs/reference/core-package|Core Package]] — Pure domain logic and types.
+- [[docs/reference/core-package.en|Core Package]] — Pure domain logic and types.

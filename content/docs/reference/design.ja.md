@@ -1,5 +1,5 @@
 ---
-title: アーキテクチャ（英語原文）
+title: アーキテクチャ
 description: 設計、データフロー、検索、型安全性。
 coverPosition: center
 toc: true
@@ -8,7 +8,7 @@ toc: true
 [English](design.md) | [日本語](design.ja.md)
 
 
-> ソース: `docs/DESIGN.md` — このページはリポジトリの英語原文です。
+> ソース: `docs/DESIGN.ja.md`
 
 # kawaii-wiki.ts — 設計とアーキテクチャ
 

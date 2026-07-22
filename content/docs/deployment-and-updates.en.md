@@ -26,7 +26,9 @@ Set the Docker image to `ghcr.io/hjosugi/kawaii-wiki.ts:VERSION`, mount the volu
 4. Redeploy
 5. Check health, login, search, and attachments
 
-Database migrations for version 1.x are applied automatically at startup. It is recommended to use a fixed tag like `1.0.1` rather than always following `latest`.
+Database migrations for version 1.x are applied automatically at startup. Prefer a fixed stable tag such as the current `1.0.32` instead of following `latest` without review. Because `main` includes unreleased changes after the stable tag, pin a commit SHA when building from source.
+
+To move from SQLite to PostgreSQL or MySQL, do not only change `DATABASE_DRIVER`; follow the dry-run, migration, and verification procedure in [[docs/database-and-search.en|Databases and Search]].
 
 ## Rollback
 

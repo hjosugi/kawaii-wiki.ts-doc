@@ -7,22 +7,23 @@ toc: true
 <!-- i18n: language-switcher -->
 [English](deploy-free.md) | [日本語](deploy-free.ja.md)
 
+> ソース: `docs/DEPLOY_FREE.ja.md`
 
-> ソース: `docs/DEPLOY_FREE.md` — このページはリポジトリの英語原文です。
+# Render Free + Turso + R2 デプロイメント
 
-# Render Free + Turso + R2 デプロイ
-
-これは issue #44 のゼロコストデプロイパスです。
+これは issue #44 のゼロコストデプロイメントパスです。
 
 ## 現在のサポート状況
 
 | サーフェス | ステータス |
 | --- | --- |
-| SQLite データベース | サポートされており、`DATABASE_DRIVER=sqlite` で依然としてデフォルトです。 |
-| ローカルアセット | サポートされており、`ASSET_STORAGE=local` で依然としてデフォルトです。 |
+| SQLite データベース | サポートされており、`DATABASE_DRIVER=sqlite` で引き続きデフォルトです。 |
+| ローカルアセット | サポートされており、`ASSET_STORAGE=local` で引き続きデフォルトです。 |
 | R2 アセット | サーバーのアセットストレージアダプターを通じてサポートされています。 |
 | ローカル libSQL | `DATABASE_DRIVER=libsql` とローカルの `file:` または `:memory:` URL でサポートされています。 |
-| Turso/libSQL | libSQL 埋め込みレプリカとしてサポートされています：サーバーはローカルのレプリカファイルを開き、リモートの Turso URL と同期します。 |
+| Turso/libSQL | libSQL 埋め込みレプリカとしてサポート：サーバーはローカルのレプリカファイルを開き、リモートの Turso URL と同期します。 |
+| PostgreSQL | `DATABASE_DRIVER=postgres` と `DATABASE_URL` でサポート。スキーマは起動時にマイグレーションされます。 |
+| MySQL | `DATABASE_DRIVER=mysql` と `DATABASE_URL` でサポート。スキーマは起動時にマイグレーションされます。 |
 
 ## Render Free の形態
 
@@ -46,22 +47,22 @@ R2_SECRET_ACCESS_KEY=your-r2-secret-key
 R2_BUCKET=kawaii-wiki.ts-assets
 ```
 
-レプリカファイルは Render Free 上で一時的なものになる可能性があります。耐久性のある側はリモートの Turso データベースです。`db:reset` はローカルのレプリカファイルのみを削除し、リモートの Turso データベースは決して削除しません。
+レプリカファイルは Render Free 上で一時的なものかもしれません。耐久性のある側はリモートの Turso データベースです。`db:reset` はローカルのレプリカファイルのみを削除し、リモートの Turso データベースは決して削除しません。
 
 ## ローカル libSQL
 
-Turso の認証情報なしで libSQL パスをテストするにはこちらを使用してください：
+Turso の認証情報なしで libSQL パスをテストするにはこちらを使います：
 
 ```env
 DATABASE_DRIVER=libsql
 LIBSQL_URL=file:./data/kawaii-wiki.ts-libsql.db
 ```
 
-同じマイグレーション、FTS5 検索、ページ書き込み、コメント、権限、Webhook、パスキーのチャレンジストレージが libSQL 互換の生クライアントを通じて動作します。
+同じマイグレーション、FTS5 検索、ページ書き込み、コメント、権限、Webhook、パスキー認証チャレンジのストレージが libSQL 互換の生クライアントを通じて動作します。
 
 ## R2 アセット
 
-R2 は SQLite または libSQL のいずれでも使用可能です：
+R2 は SQLite または libSQL のどちらでも使用可能です：
 
 ```env
 ASSET_STORAGE=r2
@@ -76,15 +77,15 @@ R2_BUCKET=kawaii-wiki.ts-assets
 
 ## 運用上の注意
 
-- 初回起動前に `bun --filter '@kawaii-wiki/server' db:migrate` を実行するか、サーバーに起動時にマイグレーションを実行させてください。
+- 最初の起動前に `bun --filter '@kawaii-wiki/server' db:migrate` を実行するか、サーバーに起動時のマイグレーションを任せてください。
 - 最初の管理者を作成するために一度だけ `bun --filter '@kawaii-wiki/server' db:seed` を実行してください。
 - `KAWAII_WIKI_PUBLIC_ORIGIN` はユーザーが開く HTTPS URL に設定したままにしてください。パスキーや OIDC リダイレクトはこれに依存します。
 - 公開オリジンのホスト名が WebAuthn のリライイングパーティ ID と異なる場合を除き、`PASSKEY_RP_ID` は設定しないでください。
-- マルチインスタンスのリアルタイム機能には `KAWAII_WIKI_EVENT_BUS=db` を維持してください。ページ変更イベントは共有データベースに保存されます。
+- マルチインスタンスのリアルタイム同期には `KAWAII_WIKI_EVENT_BUS=db` を維持してください。ページ変更イベントは共有データベースに保存されます。
 
 ## 残る本番運用の証明
 
-コードパスは実装済みでローカル libSQL 統合テストでカバーされています。特定のホスティングされたデプロイを本番運用可能と呼ぶ前に、実際の Turso と R2 の認証情報を使ってスモークテストを実行してください：
+コードパスは実装済みでローカル libSQL 統合テストでカバーされています。特定のホスティングされたデプロイメントを本番対応と呼ぶ前に、実際の Turso と R2 の認証情報を使ってスモークテストを実行してください：
 
 1. `db:migrate` と `db:seed` を実行。
 2. ローカル認証、TOTP、パスキーで登録・ログイン。

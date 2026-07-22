@@ -1,5 +1,5 @@
 ---
-title: インラインコメントRFC（英語原文）
+title: インラインコメントRFC
 description: インラインコメント機能の設計案。
 coverPosition: center
 toc: true
@@ -8,7 +8,7 @@ toc: true
 [English](inline-comments-rfc.md) | [日本語](inline-comments-rfc.ja.md)
 
 
-> ソース: `docs/INLINE_COMMENTS_RFC.md` — このページはリポジトリの英語原文です。
+> ソース: `docs/INLINE_COMMENTS_RFC.ja.md`
 
 # インラインアンカードコメントRFC
 

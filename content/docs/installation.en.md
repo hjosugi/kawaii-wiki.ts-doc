@@ -38,3 +38,5 @@ Stop with `docker compose down`, and view logs with `docker compose logs -f wiki
 ## Production Environment
 
 In production, use HTTPS, persistent volumes, regular backups, and fixed version tags. If using external secret management, you can explicitly set `JWT_SECRET` as a random value of 32 bytes or more.
+
+The current stable tag is `1.0.32`. See [[docs/database-and-search.en|Databases and Search]] for the distinction between stable images and unreleased features available only on source `main`.

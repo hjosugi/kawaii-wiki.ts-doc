@@ -23,6 +23,10 @@ The management screen features a categorized side navigation. You can search for
 
 JWT secret, SMTP, OIDC secret, R2 keys, and Git keys should not be saved in the wiki content or regular settings. Manage them via secret environment variables on the deployment target. Do not paste them into logs or screenshots.
 
+## Storage and Search
+
+**System → Storage & search** reports the active database, built-in search engine, asset backend, and status. Its generator shows environment examples for SQLite, libSQL, PostgreSQL, MySQL, local assets, and R2, but does not switch a running backend or store secrets. See [[docs/database-and-search.en|Databases and Search]] for migration, restart, and availability constraints.
+
 ## Backup
 
 Git is a content mirror and not a complete backup. Please regularly back up the `/data` volume, which includes SQLite and attachments.

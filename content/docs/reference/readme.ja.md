@@ -1,5 +1,5 @@
 ---
-title: README（英語原文）
+title: README
 description: プロジェクト概要と最短のDocker起動手順。
 coverPosition: center
 toc: true
@@ -7,8 +7,9 @@ toc: true
 <!-- i18n: language-switcher -->
 [English](readme.md) | [日本語](readme.ja.md)
 
+> ソース: `README.ja.md`
 
-> ソース: `README.md` — このページはリポジトリの英語原文です。
+> バージョン注記: 下記のsource READMEには固定版の例として `1.0.3` が残っています。この更新で確認した最新の安定版タグは `v1.0.32` です。
 
 # kawaii-wiki.ts
 
@@ -35,7 +36,7 @@ docker run -d --name kawaii-wiki --restart unless-stopped \
 
 <http://localhost:4000/setup> を開いてください。コンテナは初回起動時に永続ボリューム内に安全なJWTシークレットを作成します。
 
-このリポジトリをクローンした場合は、同じセットアップが以下のコマンド一つで完了します：
+このリポジトリをクローンしている場合は、セットアップは以下のコマンド一つで完了します：
 
 ```bash
 docker compose up -d
@@ -52,7 +53,7 @@ docker compose up -d
 
 `:1` イメージは互換性のある1.xリリースに追従します。アップデート前に承認が必要な本番環境では、Compose実行前に `KAWAII_WIKI_VERSION=1.0.3`（または他の特定のリリース）を設定してください。
 
-詳細なインストール、設定、バックアップ、リストア、Railway、Gitミラー、API、管理、開発ガイドは
+詳細なインストール、設定、バックアップ、復元、Railway、Gitミラー、API、管理、開発ガイドは
 [公式ドキュメント](https://kawaii-wiki-ts-docs.up.railway.app/docs/home) にあります。
 
 ## 開発

@@ -1,14 +1,15 @@
 ---
-title: Serverパッケージ（英語原文）
-description: サーバーの構成、実行、拡張方法。
+title: Server package (original English)
+description: Server architecture, operation, and extension points.
 coverPosition: center
 toc: true
 ---
 <!-- i18n: language-switcher -->
 [English](server-package.md) | [日本語](server-package.ja.md)
 
+> Source: `apps/server/README.md`
 
-> ソース: `../README.md` — このページはリポジトリの英語原文です。
+> Implementation status: source `main` now exposes PostgreSQL and MySQL as selectable drivers, even though the repository README section below still describes that migration as incomplete. See [[docs/database-and-search.en|Databases and Search]] for the verified current behavior.
 
 # kawaii-wiki.ts Server
 
@@ -111,6 +112,30 @@ LIBSQL_AUTH_TOKEN=your-turso-token
 # Optional; defaults to DATA_DIR/kawaii-wiki.ts-libsql-replica.db for remote URLs.
 LIBSQL_REPLICA_PATH=/data/kawaii-wiki.ts-libsql-replica.db
 ```
+
+### Database repository boundary
+
+Cross-database work is being migrated behind asynchronous repository contracts
+under `src/repositories`. Concrete SQLite/libSQL queries live under
+`src/db/repositories`; service modules consume only the driver-neutral
+interfaces. Repository methods return promises even for embedded SQLite so a
+remote or pooled database driver does not require another HTTP/service API
+rewrite.
+
+Users, external authentication accounts, password/email recovery tokens, OIDC
+login states, passkey credentials/WebAuthn challenges, TOTP factors/recovery
+codes, authorization groups/grants/page rules, user preferences, and page
+templates currently use this boundary and run the same repository contract
+suite against both SQLite and libSQL. User and authorization lookups are
+asynchronous through authentication, profile, page/search access checks,
+realtime, and Git mirror call chains. External account creation/linking,
+recovery/OIDC/WebAuthn state consumption, TOTP enablement, default permission
+initialization, and role membership synchronization keep their multi-table or
+single-use mutations atomic. Passkey counter and TOTP recovery-code updates use
+compare-and-set persistence to reject concurrent stale use. Remaining services
+are being migrated incrementally under GitHub issue #363; until that work is
+complete, PostgreSQL and MySQL are intentionally not exposed as selectable
+production drivers.
 
 Passkeys/WebAuthn need a stable HTTPS origin in production:
 
@@ -222,6 +247,8 @@ bun test apps/server
 | `src/services/oidc.ts` / `src/services/passkeys.ts` | external login and WebAuthn auth |
 | `src/services/authz.ts` | groups, membership, and page rules |
 | `src/services/webhooks.ts` | signed webhooks, delivery history, automation rules |
+| `src/repositories/` | asynchronous, driver-neutral persistence contracts |
+| `src/db/repositories/` | SQLite/libSQL implementations of repository contracts |
 | `src/db/schema.ts` | SQLite tables and relationships |
 | `src/db/migrate.ts` | local schema setup, including FTS5 |
 

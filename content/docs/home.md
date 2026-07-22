@@ -19,7 +19,8 @@ toc: true
 3. [[docs/pages-and-editing|ページの作成と編集]]
 4. [[docs/organize-and-search|整理と検索]]
 5. [[docs/collaboration|共同作業と権限]]
-6. [[docs/administration|管理と安全な運用]]
+6. [[docs/database-and-search|データベースと検索]]
+7. [[docs/administration|管理と安全な運用]]
 
 ## 運用・開発
 
@@ -31,3 +32,7 @@ toc: true
 - [[docs/reference|リポジトリ原文（英語を含む）]]
 
 画面右上の検索、または「検索」ボタンから、ページ名・本文・ラベルを横断検索できます。
+
+## 実装追従状況
+
+ドキュメントは `kawaii-wiki.ts` の `main`（確認コミット: `1774e5d`）まで監査済みです。最新の安定版タグは `v1.0.32` で、以降のPostgreSQL/MySQLなどは未リリースの変更として明記しています。

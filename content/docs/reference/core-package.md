@@ -8,7 +8,7 @@ toc: true
 [English](core-package.en.md) | [日本語](core-package.md)
 
 
-> ソース: `packages/core/README.md`
+> `packages/core/README.md` の日本語訳
 
 # kawaii-wiki.ts Core
 

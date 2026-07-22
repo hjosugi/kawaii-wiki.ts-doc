@@ -1,18 +1,14 @@
 ---
 title: 更新とロールバック
-
 description: バックアップを前提とした安全な更新手順。
-
 coverPosition: center
-
 toc: true
-
 ---
 <!-- i18n: language-switcher -->
 [English](upgrading.md) | [日本語](upgrading.ja.md)
 
 
-> ソース: `docs/UPGRADING.md` — このページはリポジトリの英語原文です。
+> ソース: `docs/UPGRADING.ja.md`
 
 # 更新とロールバック
 

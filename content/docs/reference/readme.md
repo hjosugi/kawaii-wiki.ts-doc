@@ -1,14 +1,15 @@
 ---
-title: README（英語原文）
-description: プロジェクト概要と最短のDocker起動手順。
+title: README (original English)
+description: Project overview and the shortest Docker startup path.
 coverPosition: center
 toc: true
 ---
 <!-- i18n: language-switcher -->
 [English](readme.md) | [日本語](readme.ja.md)
 
+> Source: `README.md`
 
-> ソース: `README.md` — このページはリポジトリの英語原文です。
+> Version note: the exact-version example below remains `1.0.9` in the source README. The latest stable tag verified for this documentation update is `v1.0.32`.
 
 # kawaii-wiki.ts
 
@@ -20,6 +21,7 @@ small, dependable foundation that people, developers, and AI can improve
 together.
 
 [Official documentation](https://kawaii-wiki-ts-docs.up.railway.app/docs/home) ·
+[Documentation source](https://github.com/hjosugi/kawaii-wiki.ts-doc) ·
 [Releases](https://github.com/hjosugi/kawaii-wiki.ts/releases) ·
 [Issues](https://github.com/hjosugi/kawaii-wiki.ts/issues)
 
@@ -55,12 +57,14 @@ docker compose up -d
 ```
 
 The `:1` image follows compatible 1.x releases. Production installations that
-require approval before every update should set `KAWAII_WIKI_VERSION=1.0.3` (or
+require approval before every update should set `KAWAII_WIKI_VERSION=1.0.9` (or
 another exact release) before running Compose.
 
 Detailed installation, configuration, backup, restore, Railway, Git mirror,
 API, administration, and development guides live in the
 [official documentation](https://kawaii-wiki-ts-docs.up.railway.app/docs/home).
+Their Markdown source is maintained in
+[`hjosugi/kawaii-wiki.ts-doc`](https://github.com/hjosugi/kawaii-wiki.ts-doc).
 
 ## Develop
 

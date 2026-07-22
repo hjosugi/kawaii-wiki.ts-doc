@@ -26,7 +26,9 @@ Docker Imageに `ghcr.io/hjosugi/kawaii-wiki.ts:VERSION`、Volumeに `/data`、P
 4. 再デプロイ
 5. health、ログイン、検索、添付を確認
 
-1.xのDBマイグレーションは起動時に自動適用されます。`latest` の無条件追従より、`1.0.1` のような固定タグを推奨します。
+1.xのDBマイグレーションは起動時に自動適用されます。`latest` の無条件追従より、現在の安定版 `1.0.32` のような固定タグを推奨します。`main`には安定版タグより後の未リリース変更も含まれるため、ソースビルドを使う場合はコミットSHAも固定してください。
+
+SQLiteからPostgreSQL/MySQLへ移行するときは、単に `DATABASE_DRIVER` を変更せず、[[docs/database-and-search|データベースと検索]] のdry-run・移行・検証手順を実行します。
 
 ## ロールバック
 

@@ -1,14 +1,13 @@
 ---
-title: Webパッケージ（英語原文）
-description: Web UIの構成、開発、ビルド方法。
+title: Web package (original English)
+description: Web UI architecture, development, and build instructions.
 coverPosition: center
 toc: true
 ---
 <!-- i18n: language-switcher -->
 [English](web-package.md) | [日本語](web-package.ja.md)
 
-
-> ソース: `../../web/README.md` — このページはリポジトリの英語原文です。
+> Source: `apps/web/README.md`
 
 # kawaii-wiki.ts Web
 
